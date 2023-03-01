@@ -13,10 +13,12 @@ require("hardhat-deploy")
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || ""
 const GOERLI_RPC_URL =
     process.env.GOERLI_RPC_URL ||
-    "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
+    "https://eth-goerli.g.alchemy.com/v2/3vheCmia4Rm_Ts8nJIiRA7NoWAM6__8o"
+//"https://eth-mainnet.alchemyapi.io/v2/your-api-key"
 const PRIVATE_KEY =
     process.env.PRIVATE_KEY ||
-    "0x11ee3108a03081fe260ecdc106554d09d9d1209bcafd46942b10e02943effc4a"
+    "0x4d6fff9ecf44057b4c21ade92c35c40569c518038dcd85183f7f0ab1a287e602"
+//"0x11ee3108a03081fe260ecdc106554d09d9d1209bcafd46942b10e02943effc4a"
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || ""
 
 module.exports = {
@@ -43,10 +45,10 @@ module.exports = {
             },
         ],
     },
+
     etherscan: {
         apiKey: ETHERSCAN_API_KEY,
         // customChains: [], // uncomment this line if you are getting a TypeError: customChains is not iterable
-
     },
     gasReporter: {
         enabled: true,
